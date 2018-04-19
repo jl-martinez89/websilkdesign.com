@@ -1,0 +1,216 @@
+/* --------------------------------------------
+    Viewport less than 1400px Stylesheet
+   -------------------------------------------- */
+
+@media (max-width:1400px) {
+  body { padding-top: 0; }
+}
+
+/* --------------------------------------------
+    Viewport less than 1250px Stylesheet
+   -------------------------------------------- */
+
+@media (max-width: 1250px){
+  #home {
+    background: url(../img/office_1280x843.jpg) no-repeat fixed top #222;
+  }
+  .logo {
+    margin-top: 0;
+    clear: both;
+    }
+  .home.text-zone { margin-top: 60px; }
+}
+
+/* --------------------------------------------
+    Viewport less than 1140px Stylesheet
+   -------------------------------------------- */
+
+@media (max-width: 1140px) {
+  .portfolio-title h1 { font-size: 4rem; }
+  .logo img { width: 400px; }
+}
+
+/* --------------------------------------------
+    Viewport less than 1024px Stylesheet
+   -------------------------------------------- */
+
+@media (max-width: 1024px){
+  /* .bag .about.text-zone, */
+  .bag .contact.text-zone { width: 46%; }
+
+  .map-wrap {
+    float: none;
+    min-width: 88%;
+    margin: auto;
+    clear: both;
+    }
+}
+
+/* --------------------------------------------
+    Viewport less than 992px Stylesheet
+   -------------------------------------------- */
+
+@media (max-width: 992px){
+  .wrapper-in {
+    min-height: 0;
+    margin-top: 2rem;
+    }
+}
+
+/* --------------------------------------------
+    Viewport less than 960px Stylesheet
+   -------------------------------------------- */
+
+@media (max-width: 960px) {
+  body {
+    padding-top: 50px;
+    padding-left: 0;
+    overflow: auto;
+    }
+  .page {
+    height: auto;
+    position: relative;
+    }
+  .bag {
+    padding-bottom: 58px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    }
+  .bag .about.text-zone,
+  .bag .contact.text-zone { width: 90%; }
+
+  .navbar-brand .icon-logo { padding: 8px 4px 10px 4px; }
+  .navbar-brand .icon-brand { padding: 8px 4px 5px 4px; }
+
+  #navbar { text-align: center; }
+  .navbar-fixed-left {
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    }
+  .navbar-fixed-left .navbar-collapse .navbar-nav {
+    display: inline-block;
+    min-width: 300px;
+    }
+  .navbar-fixed-left .navbar-collapse .navbar-nav>li,
+  .navbar-fixed-left .navbar-collapse .social-media>li { width: 60px; }
+  .nav.social-media {
+    position: static;
+    top: 0;
+    margin-top: 0;
+    width: 120px;
+    display: inline;
+    float: right;
+    }
+  .navbar-nav>li>a { padding: 0; }
+  nav div .nav li { display: inline; }
+  nav div ul {
+    position: static;
+    top: 0px;
+    }
+  #map {
+    background: url(https://maps.googleapis.com/maps/api/staticmap?center=Vancouver&zoom=5&maptype=roadmap&style=feature:poi|visibility:off&style=feature:landscape|lightness:-50&style=feature:road|visibility:off&style=feature:administrative|visibility:off&size=600x400&style=element:labels|visibility:on&style=element:geometry.stroke|visibility:off&style=feature:landscape|element:geometry|saturation:-100&style=feature:road|element:labels|visibility:off&style=feature:administrative|element:labels|gamma:0.1&style=feature:road|element:labels|visibility:off&style=feature:poi|element:labels|visibility:off&style=feature:water|saturation:-100|lightness:-81&markers=size:mid%7Ccolor:0xF9C80E%7Clabel:W>%7CVancouver,BC&key=AIzaSyDqTWIw6rYG0VNegVqHJJL9XbcniExb0No) no-repeat top;
+    }
+  .tags {
+    left: 0;
+    margin-left: 8px;
+    }
+  .tags-top { top: 20px; }
+
+  .text-zone { margin-left: 4%; }
+  .text-zone h1 { font-size: 5rem; }
+  .text-zone h2 { font-size: 1.3rem; }
+
+  .about-media {
+    position: relative;
+    width: 100%;
+    margin: 2% auto;
+    padding: 0 4%;
+    overflow: hidden;
+    }
+  #portfolio {
+    margin: 0 auto;
+    padding-left: 20px;
+    }
+  .button-grp {
+    margin: 10px auto;
+    text-align: center;
+    }
+
+  .asset { margin-left: 0; }
+
+  .portfolio-title { margin: 20px auto; }
+  .swiper-button-prev { left: 10px; }
+  .swiper-button-next { right: 10px; }
+}
+
+/* --------------------------------------------
+    Viewport less than 767px Stylesheet
+   -------------------------------------------- */
+
+@media (max-width: 767px){
+  body { min-height: 100vh; }
+
+  .navbar-fixed-left {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1030;
+    }
+  nav div ul { text-align: center; }
+
+  .text-zone h1 { font-size: 4rem; }
+  .text-zone h2 { font-size: 1.2rem; }
+
+  .logo img { width: 380px; }
+
+  #portfolio .portfolio-item { margin: 0 0 30px; }
+}
+
+/* --------------------------------------------
+    Viewport less than 633px Stylesheet
+   -------------------------------------------- */
+
+@media (max-width: 633px){
+  .about-media iframe {
+    position: relative;
+    top: 0px;
+    }
+}
+
+/* --------------------------------------------
+    Viewport less than 530px Stylesheet
+   -------------------------------------------- */
+
+@media (max-width: 530px){
+  body { overflow-x: hidden; }
+}
+
+/* --------------------------------------------
+    Viewport less than 480px Stylesheet
+   -------------------------------------------- */
+
+@media (max-width: 480px){
+  .logo {
+    margin-right: 2%;
+    clear: both;
+  }
+}
+
+/* @media (max-width: 1432px) {
+  .container {
+    width: 90%; }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 92%; }
+}
+@media (max-width: 992px) {
+  .container { width: 94%; }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 98%; }
+} */

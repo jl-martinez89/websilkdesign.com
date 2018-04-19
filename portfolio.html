@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110940654-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+
+  <meta name="description" content="Jose Martinez is seeking a carreer as a web developer in Vancouver, BC. Jose is a currently student in the BCIT New media design and web development 2017.">
+  <meta name="author" content="Jose Martinez">
+  <meta name="keywords" content="Web developer, UI designer, Vancouver, BCIT, New Media, Portfolio">
+
+  <meta property='og:title' content="Jose Martinez Portfolio Site"/>
+  <meta property='og:description' content="Jose is seeking a carreer as a web developer in Vancouver, BC. Jose is a currently student in the BCIT New media design and web development 2017."/>
+  <meta property="og:url" content="http://www.websilkdesign.com" />
+  <meta property="og:image" content="http://www.websilkdesign.com/img/portfolio-image.jpg" />
+  <title>My work | Jose Martinez, Web Developer, Portfolio, BCIT New Media</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!-- Plugin CSS -->
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <link href="css/navbar-fixed-left.min.css" rel="stylesheet" type="text/css">
+  <link href="css/3d-button.css" rel="stylesheet" type="text/css">
+  <!-- Custom CSS -->
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
+  <link href="css/responsive.css" rel="stylesheet" type="text/css">
+  <!-- favicon -->
+  <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+</head>
+
+<body id="work" onload="init_isotope()">
+  <nav class="navbar navbar-inverse navbar-fixed-left">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img class="icon-logo" src="img/icon-logo.gif" alt="icon logo">
+        <img class="icon-brand" src="img/icon-brand.gif" alt="icon brand"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html"><i class="nav-ion ion-home"></i></a></li>
+        <li><a href="portfolio.html"><i class="nav-ion ion-briefcase link-active"></i></a></li>
+        <!-- <li><a href="skills.html"><i class="nav-ion ion-gear-b"></i></a></li> -->
+        <li><a href="about.html"><i class="nav-ion ion-person"></i></a></li>
+        <li><a href="contact.html"><i class="nav-ion ion-email"></i></a></li>
+      </ul>
+      <ul class="nav social-media hidden-xs">
+        <li><a href="http://www.linkedin.com/in/jmartinezg-ca/" target="_blank"><i class="nav-ion ion-social-linkedin"></i></a></li>
+        <li><a href="https://github.com/jl-martinez89" target="_blank"><i class="nav-ion ion-social-github"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+    <section id="grid">
+      <div class="button-grp">
+        <button class="btn btn-hot btn-active" data-filter="*">All</button>
+        <button class="btn btn-hot" data-filter=".web-dev">Web Design &amp; Development</button>
+        <button class="btn btn-hot" data-filter=".graphics">Graphic Design</button>
+      </div>
+      <div id="portfolio">
+        <div class="portfolio-item web-dev">
+          <div class="portfolio-fw">
+            <a href="portfolio/budgetizer.html" class="portfolio-link">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="circle"><span>View Project</span></div>
+                </div>
+              </div>
+              <img src="img/thumbnails/budgetizer1.jpg" alt="">
+            </a>
+          </div>
+          <h2 class="text-center title">Budgetizer</h2>
+          <h3 class="text-center">- Web Development</h3>
+          <p>A simple application to keep track of the monthly budget.</p>
+        </div>
+        <div class="portfolio-item web-dev">
+          <div class="portfolio-fw">
+            <a href="portfolio/florist-store.html" class="portfolio-link">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="circle"><span>View Project</span></div>
+                </div>
+              </div>
+              <img src="img/thumbnails/florist-store1.jpg" alt="">
+            </a>
+          </div>
+          <h2>Florist Store</h2>
+          <h3>- Web Design</h3>
+          <p>A fully responsive website for a fictional florist store, includes landing, about, contact page, from product page to Order Confirmation page.</p>
+        </div>
+        <div class="portfolio-item web-dev">
+          <div class="portfolio-fw">
+            <a href="portfolio/oceanlife.html" class="portfolio-link">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="circle"><span>View Project</span></div>
+                </div>
+              </div>
+              <img src="img/thumbnails/oceanlife1.jpg" alt="">
+            </a>
+          </div>
+          <h2 class="text-center title">Ocean Life</h2>
+          <h3 class="text-center">- Web Design</h3>
+          <p>A fictional blog for a school project. The purpose of this project was to get some real-world experience using a template and a CMS to build a website.</p>
+        </div>
+        <!-- <div class="portfolio-item web-dev">
+          <div class="portfolio-fw">
+            <a href="portfolio/the-pig-game.html" class="portfolio-link">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="circle"><span>View Project</span></div>
+                </div>
+              </div>
+              <img src="img/thumbnails/thepiggame1.jpg" alt="">
+            </a>
+          </div>
+          <h2 class="text-center title">The Pig Game</h2>
+          <h3 class="text-center">- Web Development</h3>
+          <p>Pig is a simple dice game with many rule variations. The objective of Pig game is to score 100 points before the opponent does.</p>
+        </div> -->
+        <div class="portfolio-item web-dev">
+          <div class="portfolio-fw">
+            <a href="portfolio/beer-down-here.html" class="portfolio-link">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="circle"><span>View Project</span></div>
+                </div>
+              </div>
+              <img src="img/thumbnails/beerdownhere1.jpg" alt="">
+            </a>
+          </div>
+          <h2 class="text-center title">Beer Down Here</h2>
+          <h3 class="text-center">- Web Design</h3>
+          <p>A fully responsive website for a fictional company that promotes breweries around Vancouver.</p>
+        </div>
+        <div class="portfolio-item web-dev">
+          <div class="portfolio-fw">
+            <a href="portfolio/tasty-vegan-food.html" class="portfolio-link">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="circle"><span>View Project</span></div>
+                </div>
+              </div>
+              <img src="img/thumbnails/tastyveganfood1.jpg" alt="">
+            </a>
+          </div>
+          <h2 class="text-center title">Tasty Vegan Food</h2>
+          <h3 class="text-center">- Web Design</h3>
+          <p>A fictional vegan blog for a school project. The purpose of this project was to get some real-world experience with communications as it relates to creating website content.</p>
+        </div>
+        <div class="portfolio-item web-dev">
+          <div class="portfolio-fw">
+            <a href="portfolio/infographic.html" class="portfolio-link">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="circle"><span>View Project</span></div>
+                </div>
+              </div>
+              <img src="img/thumbnails/infographic3.jpg" alt="">
+            </a>
+          </div>
+          <h2 class="text-center title">Infographics</h2>
+          <h3 class="text-center">- Web Design</h3>
+          <p>A personal infographic showing details about me, skills and other info.</p>
+        </div>
+        <div class="portfolio-item web-dev">
+          <div class="portfolio-fw">
+            <a href="portfolio/bcairlines.html" class="portfolio-link">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="circle"><span>View Project</span></div>
+                </div>
+              </div>
+              <img src="img/thumbnails/bcairlines1.jpg" alt="">
+            </a>
+          </div>
+          <h2 class="text-center title">BC Airlines</h2>
+          <h3 class="text-center">- Web Design</h3>
+          <p>An animated web advertisement.</p>
+        </div>
+        <div class="portfolio-item graphics">
+          <div class="portfolio-fw">
+            <a href="portfolio/mellow.html" class="portfolio-link">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="circle"><span>View Project</span></div>
+                </div>
+              </div>
+              <img src="img/thumbnails/mellow3.jpg" alt="">
+            </a>
+          </div>
+          <h2 class="text-center title">Mellow</h2>
+          <h3 class="text-center">- Graphic Design</h3>
+          <p>A branding and Logo design for a fictional mushrooms farm. Using techniques and best practices for logo design and color.</p>
+        </div>
+        <div class="portfolio-item graphics">
+          <div class="portfolio-fw">
+            <a href="portfolio/la-lune.html" class="portfolio-link">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="circle"><span>View Project</span></div>
+                </div>
+              </div>
+              <img src="img/thumbnails/Lalune1.jpg" alt="">
+            </a>
+          </div>
+          <h2>La Lune</h2>
+          <h3>- Graphic Design</h3>
+          <p>A menu mockup for a fictional restaurant consisting of 4 pages.</p>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center">Websilk Design &copy;2018 | Developed by Jos&eacute; Mart&iacute;nez
+      <a id="return-to-top" href="#top"><i class="ion-chevron-up"></i></a>
+    </footer>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/toggle_push.js"></script>
+  <script src="js/backtotop.js"></script>
+  <script>
+    function init_isotope(){
+      $('#portfolio').isotope({
+        itemSelector: '.portfolio-item',
+        stagger: 30,
+        masonry: {
+          columnWidth: 350,
+          isFitWidth: true
+        }
+      });
+      var $portfolio = $('#portfolio').isotope({});
+      // filter items on button click
+      $('.button-grp').on( 'click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $portfolio.isotope({ filter: filterValue });
+      });
+      $('.button-grp').each( function( i, buttonGroup ) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.btn-active').removeClass('btn-active');
+          $(this).addClass('btn-active');
+        });
+      });
+    };
+    /* Function that allow hover effects on touch devices */
+    $('.portfolio-link .caption').on('touchstart mouseenter', '.portfolio-link', function (e) {
+      $(this).addClass('hover_effect');
+    });
+
+    $('.portfolio-link .caption').on('mouseleave touchmove click', '.portfolio-link', function (e) {
+      $(this).removeClass('hover_effect');
+      if (e.type == 'click') {
+        e.preventDefault ? e.preventDefault() : e.returnValue = false;
+      }
+    });
+  </script>
+</body>
+</html>
